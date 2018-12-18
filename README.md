@@ -1,7 +1,7 @@
 rrsm
 ========
 ## Overview ##
-This is a go implementation of *Raft distributed consensus protocal* based *replicated state machine*, which may be used to build larger distributed system by making a higher level abstraction.
+This is a go implementation of *Raft distributed consensus protocol* based *replicated state machine*, which maybe can be used to build larger distributed system by making a higher level abstraction.
 
 ## Features ##
 - [x] Leader election 
