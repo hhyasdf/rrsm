@@ -116,6 +116,10 @@ func (self *RRSMNode) GetAddr() string {
 	return self.addr
 }
 
+func (self *RRSMNode) GetCharacter() int {
+	return self.character
+}
+
 // parallel requests to request vote
 // return true if it becomes a leader,
 // else if election timeout,

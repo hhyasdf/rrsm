@@ -62,7 +62,7 @@ func main() {
 			if leader == "" {
 				fmt.Println("no leader exist")
 			} else {
-				if node.GetLeaderAddr() == node.GetAddr() {
+				if node.GetCharacter() == rrsm.RaftLEADER {
 					fmt.Println("I'm the leader")
 				} else {
 					fmt.Println(leader)
