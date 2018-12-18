@@ -258,13 +258,13 @@ func (self *RRSMNode) Run() error {
 		for {
 			select {
 			case <-self.accessLeaderChan:
-				self.resetElectionTimeoutTicker()
 			case <-self.newTermChan:
 			case <-self.electionTimeoutTicker.C:
 				{
 					break FollowerLoop
 				}
 			}
+			self.resetElectionTimeoutTicker()
 		}
 
 		// become a candidate
